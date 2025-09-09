@@ -1,0 +1,268 @@
+* { box-sizing: border-box; }
+body {
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0;
+}
+
+/*=========== Nav ==================*/
+
+.nav-icons { 
+  display: flex; 
+  align-items: center; 
+  gap: 15px;
+}
+.logo-list{
+  font-size: 18px;
+  color: #454545;
+}
+.nav-icons i { 
+  position: relative; 
+  cursor: pointer; 
+}
+
+.nav-icons i .badge {
+  position: absolute; 
+  top: -12px; 
+  right: -8px;  
+  color: #a87c50; 
+  border: 1px solid #a87c50; 
+  font-size: 10px; 
+  border-radius: 50%; 
+  padding: 2px 5px; 
+}
+.btn-sell { 
+  background-color: #a87c50; 
+  color: #fff; 
+  border-radius: 50px; 
+  padding: 8px 16px; 
+  font-size: 18px;
+}
+.btn-sell:hover { 
+  background-color: #926b45; 
+  color: #fff; 
+}
+
+/* Mobile nav-icons vertical */
+@media (max-width: 991px) {
+  .nav-icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+  }
+}
+
+/* Desktop large padding */
+@media (min-width: 1200px) {
+  .navbar {
+    padding: 26px 300px;
+  }
+  .navbar .logo{
+    color: #454545;
+  font-size: 32px;
+}
+}
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 100%;
+    padding: 0 300px;
+  }
+}
+
+/*================= Hero ======================*/
+.hero{
+  background-image: url(../img/banner/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 885px;
+}
+.min-vh-60{ min-height:60vh; }
+.text-white-75{ color: rgba(255,255,255,.85); }
+
+/*================= Category ======================*/
+.category{
+  width: 200px;
+  height: 202px;
+  padding: 25px;
+}
+.category a{
+  text-decoration: none;
+  color: #101828;
+}
+.category .Category-taitel{
+  margin-top: 16px;
+  color: #101828;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.category p{
+  margin-top: 4px;
+  color: #6A7282;
+}
+
+/*================= Cards ======================*/
+.card{
+  display: flex;
+  width: 312px;
+  padding: 0 1px;
+  flex-direction: column;
+  border-radius: 14px;
+  border: 1px solid #E5E7EB;
+  background: #FFF;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+}
+
+/* Hover lift */
+.hover-lift{ transition: transform .2s ease, box-shadow .2s ease; }
+.hover-lift:hover{ transform: translateY(-4px); box-shadow: 0 10px 18px rgba(0,0,0,.08); }
+
+/*====================== CTA ==============================*/
+.container-ctc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border-radius: 30px;
+  height: 300px;
+}
+.cta-banner{
+  background-image: url(../img/Discover/Discover.jpg);
+  background-size: cover; 
+  background-position: center;
+  border-radius: 30px;
+  margin: 0 300px;
+  padding: 70px 0;
+}
+.cta-overlay{ 
+  position:absolute; 
+  inset:0; background: #00000080; 
+  border-radius: 30px;
+}
+.cta-text h3{
+   font-size: 36px;
+}
+.cta-text p{
+  font-size: 20px;
+  line-height: 28px; 
+  padding-top: 16px;
+}
+.cta-btn{
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+.cta-btn .btn-browse{
+ background: #A67C52;
+}
+.cta-btn .btn-browse:hover{
+ background: wheat;
+ color: #101828;
+}
+
+/*=================== Footer =====================*/
+.footer{
+  margin-top: 100px;
+  width: 100%;
+  background: #1F1F1F;
+  padding: 70px 300px;
+}
+footer a{ 
+  text-decoration: none; 
+}
+
+/* =====================================================
+   ✅ Responsive Fixes 
+===================================================== */
+
+
+@media (max-width: 1440px) {
+  .navbar {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .cta-banner {
+    margin: 0 100px;
+  }
+  .footer {
+    padding: 50px 100px;
+  }
+}
+@media (max-width: 1199px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cta-banner {
+    margin: 0 100px;
+  }
+  .footer {
+    padding: 50px 100px;
+  }
+}
+
+/* Mobile (≤991px) */
+@media (max-width: 991px) {
+  .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .btn-sell { 
+  background-color: #a87c50; 
+  color: #fff; 
+  border-radius: 50px; 
+  padding: 6px 8px; 
+  font-size: 12px; 
+}
+  .cta-banner {
+    margin: 0 15px;
+    padding: 40px 15px;
+    border-radius: 15px;
+  }
+  .cta-text h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .cta-text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .footer {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .footer .row > div {
+    margin-bottom: 20px;
+  }
+  .category {
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+  .row#productGrid {
+    justify-content: center !important;
+  }
+}
+
+/* Small Mobile (≤576px) */
+@media (max-width: 576px) {
+  h1.display-5 {
+    font-size: 1.75rem;
+  }
+  .hero {
+    min-height: 500px;
+  }
+  .hero .lead {
+    font-size: 0.95rem;
+  }
+  .cta-btn {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
