@@ -51,84 +51,79 @@ body {
 }
 
 /*================= Hero ======================*/
-.hero{
+.hero {
   background-image: url(../img/banner/banner.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
   min-height: 885px;
 }
+.hero-overlay {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.5);
+}
 .banner-text h1{
   padding-top: 185px;
-  height: 75px;
-  color: #FFF;
-  align-self: stretch;
   font-size: 56px;
-  font-family: Inter;
-font-style: normal;
-font-weight: 700;
-line-height: 75px;
+  line-height: 75px;
+  font-weight: 700;
+  color: #FFF;
 }
 .banner-text p{
-  padding-top: 84px;
-  width: 552px;
+  padding-top: 30px;
+  max-width: 552px;
+  font-size: 20px;
+  line-height: 30px;
   color: #FFF;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0.8px;
 }
 .banner-btn{
-  padding-top: 56px;
+  padding-top: 50px;
   display: flex;
-
+  gap: 15px;
+}
+.banner-btn .btn-shop,
+.banner-btn .btn-find{
+  height: 56px;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 .banner-btn .btn-shop{
-border-radius: 1000px;
-background: var(--Dark-Yellow-dark-yellow-6, #A67C52);
-font-size: 18px;
-color: #fff;
-display: flex;
-height: 56px;
-padding: 14px 28px;
-align-items: center;
-gap: 8px;
-} 
+  background: #A67C52;
+  color:#fff;
+}
 .banner-btn .btn-find{
-border-radius: 1000px;
-border: 1px solid #C7AC92;;
-font-size: 18px;
-color: #C7AC92;;
-display: flex;
-height: 56px;
-padding: 14px 28px;
-align-items: center;
-gap: 8px;
+  border: 1px solid #C7AC92;
+  color:#C7AC92;
 }
 .banner-count{
   margin-top: 200px;
+  display: flex;
   gap: 52px;
+  justify-content: flex-start;
 }
 .banner-count span{
-  color: #FFF;
-text-align: center;
-font-family: Inter;
-font-size: 28px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color:#FFF;
 }
 .banner-name{
-  color: #FFF;
-text-align: center;
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; 
+  text-align: center;
+  font-size: 18px;
+  color:#FFF;
 }
+
+
+
 /*================= Category ======================*/
 .categories-section{
   padding-top: 120px;

@@ -1,20 +1,28 @@
 
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 100%;
+        padding: 0 300px;
+    }
+}
 /* =================== LARGE DEVICES (≥1200px) =================== */
 @media (min-width: 1200px) and (max-width: 1600px) {
   .navbar {
     padding: 26px 100px;
   }
+  .banner-text h1 {padding-top: 185px;}
   
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 100%;
-    padding: 0 300px;
+    max-width: 100% !important;
+    padding: 0 100px;
   }
+
   .px-xl-300 {
     padding-left: 300px !important;
     padding-right: 300px !important;
   }
+  
 }
-
 /* =================== MEDIUM DEVICES (992px – 1199px) =================== */
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar {
@@ -23,38 +31,40 @@
   }
   .navbar .logo {
     font-size: 24px;
-}
-  .cta-banner {
-    margin: 0 100px;
   }
-  .footer {
-    padding: 50px 100px;
-  }
-  .hero {
+
+/*-------baner---------*/
+
+.hero {
     min-height: 650px;
     text-align: center;
-    padding: 80px 40px;
+    padding: 100px 40px 40px; 
   }
-  .banner-text h1 {
+  .banner-text h1{
     font-size: 42px;
     line-height: 56px;
-    padding-top: 100px;
+    padding-top: 60px;
   }
-  .banner-text p {
-    padding-top: 40px;
+  .banner-text p{
     font-size: 18px;
     max-width: 500px;
     margin: 0 auto;
+    padding-top: 30px;
   }
-  .banner-btn {
+  .banner-btn{
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 25px;
   }
-  .banner-count {
+  .banner-count{
     margin-top: 100px;
     justify-content: center;
     gap: 40px;
   }
+
+
+
+
+  
 }
 
 /* =================== TABLET DEVICES (768px – 991px) =================== */
@@ -69,37 +79,44 @@
     gap: 12px;
     margin-top: 15px;
   }
-  .banner-btn {
+
+/*-----------------------*/
+  .hero{
+    min-height: 550px;
+    padding: 80px 20px 20px;
+    text-align: center;
+  }
+  .banner-text h1{
+    font-size: 32px;
+    line-height: 44px;
+    padding-top: 50px;
+  }
+  .banner-text p{
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .banner-btn{
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+    margin-top: 25px;
   }
   .banner-btn .btn-shop,
-  .banner-btn .btn-find {
+  .banner-btn .btn-find{
     width: auto;
     max-width: none;
   }
-  .banner-count {
+  .banner-count{
     flex-direction: row;
     justify-content: center;
     gap: 40px;
     margin-top: 60px;
   }
-  .hero {
-    min-height: 550px;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  .banner-text h1 {
-    font-size: 32px;
-    line-height: 44px;
-    padding-top: 60px;
-  }
-  .banner-text p {
-    font-size: 16px;
-    line-height: 24px;
-    padding-top: 20px;
-  }
+
+  
 }
 
 /* =================== MOBILE DEVICES (≤767px) =================== */
@@ -111,74 +128,50 @@
   .navbar .logo {
     color: #454545;
     font-size: 20px;
-}
-  .btn-sell { 
-    background-color: #a87c50; 
-    color: #fff; 
-    border-radius: 50px; 
-    padding: 6px 8px; 
-    font-size: 12px; 
   }
-  .cta-banner {
-    margin: 0 15px;
-    padding: 40px 15px;
-    border-radius: 15px;
-  }
-  .cta-text h3 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  .cta-text p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .footer {
-    padding: 40px 20px;
+/*------------*/
+
+.hero {
+    min-height: 500px;
+    padding: 60px 15px 15px; 
     text-align: center;
   }
-  .footer .row > div {
-    margin-bottom: 20px;
+  .banner-text h1{
+    font-size: 28px;
+    line-height: 36px;
+    padding-top: 40px;
   }
-  .category {
-    width: 100%;
-    max-width: 180px;
-    margin: 0 auto;
+  .banner-text p{
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 10px;
   }
-  .card {
-    width: 100%;
-    max-width: 100%;
-  }
-  .row#productGrid {
-    justify-content: center !important;
-  }
-  .hero {
-    min-height: 500px;
-  }
-  .hero .lead {
-    font-size: 0.95rem;
-  }
-  .banner-btn {
+  .banner-btn{
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-    margin-top: 25px;
+    gap: 12px;
+    margin-top: 20px;
   }
   .banner-btn .btn-shop,
-  .banner-btn .btn-find {
+  .banner-btn .btn-find{
     width: 100%;
-    max-width: 220px;
+    max-width: 200px;
     justify-content: center;
   }
-  .banner-count {
-    margin-top: 60px;
+  .banner-count{
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
+    margin-top: 40px;
   }
-  h1.display-5 {
-    font-size: 1.75rem;
+  .banner-count span{
+    font-size: 22px;
   }
-  .cta-btn {
-    flex-direction: column;
-    gap: 12px;
+  .banner-name{
+    font-size: 16px;
   }
+
+
+
+
+  
 }
