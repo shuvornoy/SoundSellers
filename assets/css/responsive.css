@@ -545,7 +545,8 @@
   .footer-btn { flex-direction: column; gap: 8px; }
   .footer-btn input { width: 100%; }
   .footer-btn button { width: 100%; }
-  .footer-last { flex-direction: column; gap: 12px; align-items: center; text-align: center; }
+  .footer-last { flex-direction: column; gap: 12px; align-items: center; text-align: center;  }
+  .add{text-align: center;}
   .footer-last img { max-width: 120px; }
 }
 
