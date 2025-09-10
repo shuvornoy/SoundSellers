@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * { box-sizing: border-box; }
 body {
   font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -42,32 +44,6 @@ body {
   color: #fff; 
 }
 
-/* Mobile nav-icons vertical */
-@media (max-width: 991px) {
-  .nav-icons {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 15px;
-  }
-}
-
-/* Desktop large padding */
-@media (min-width: 1200px) {
-  .navbar {
-    padding: 26px 300px;
-  }
-  .navbar .logo{
-    color: #454545;
-  font-size: 32px;
-}
-}
-@media (min-width: 1400px) {
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 100%;
-    padding: 0 300px;
-  }
-}
 
 /*================= Hero ======================*/
 .hero{
@@ -407,6 +383,7 @@ line-height: 28px; /* 155.556% */
   height: 300px;
 }
 .cta-banner{
+
   background-image: url(../img/Discover/Discover.jpg);
   background-size: cover; 
   background-position: center;
@@ -440,6 +417,58 @@ line-height: 28px; /* 155.556% */
  color: #101828;
 }
 
+
+/*=================== Why Choose =====================*/
+.why-choose h2{
+  color: #101828;
+text-align: center;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 44px; 
+letter-spacing: -0.72px;
+}
+.why-choose p{
+  padding-top: 16px;
+color: #4A5565;
+text-align: center;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+}
+.why-choose-card{
+  padding-top: 60px;
+}
+.why-choose-card h6{
+  color: #101828;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px; 
+padding: 16px 0px;
+}
+.why-choose-card p{
+  color: #4A5565;
+text-align: center;
+
+/* Text md/Regular */
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+/*=================== How It Works =====================*/
+
+.how{
+padding: 0 50px;
+}
+
 /*=================== Footer =====================*/
 .footer{
   margin-top: 100px;
@@ -452,200 +481,5 @@ footer a{
 }
 
 /* =====================================================
-   ✅ Responsive Fixes 
-===================================================== */
-
-@media (min-width: 1400px) {
-  .px-xl-300 {
-    padding-left: 300px !important;
-    padding-right: 300px !important;
-  }
-}
-@media (max-width: 1440px) {
-  .navbar {
-    padding-left: 200px;
-    padding-right: 200px;
-  }
-  .cta-banner {
-    margin: 0 100px;
-  }
-  .footer {
-    padding: 50px 100px;
-  }
-  .banner-text h1{
-    font-size: 43px;
-  }
-  .col-xl-6{
-        flex: 0 0 auto;
-        width: 60%;
-    }
-}
-
-@media (max-width: 1199px) {
-  .navbar {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .cta-banner {
-    margin: 0 100px;
-  }
-  .footer {
-    padding: 50px 100px;
-  }
-}
-
-/* Mobile (≤991px) */
-@media (max-width: 991px) {
-  .navbar {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .btn-sell { 
-  background-color: #a87c50; 
-  color: #fff; 
-  border-radius: 50px; 
-  padding: 6px 8px; 
-  font-size: 12px; 
-}
-  .cta-banner {
-    margin: 0 15px;
-    padding: 40px 15px;
-    border-radius: 15px;
-  }
-  .cta-text h3 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-  .cta-text p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .footer {
-    padding: 40px 20px;
-    text-align: center;
-  }
-  .footer .row > div {
-    margin-bottom: 20px;
-  }
-  .category {
-    width: 100%;
-    max-width: 180px;
-    margin: 0 auto;
-  }
-  .card {
-    width: 100%;
-    max-width: 100%;
-  }
-  .row#productGrid {
-    justify-content: center !important;
-  }
-}
 
 
-
-/* Small Mobile (≤576px) */
-@media (max-width: 576px) {
-  h1.display-5 {
-    font-size: 1.75rem;
-  }
-  .hero {
-    min-height: 500px;
-  }
-  .hero .lead {
-    font-size: 0.95rem;
-  }
-  .cta-btn {
-    flex-direction: column;
-    gap: 12px;
-  }
-}
-
-
-/* ================= Hero Banner Responsive ================== */
-
-/* Tablet (≤1199px) */
-@media (max-width: 1199px) {
-  .hero {
-    min-height: 650px;
-    text-align: center;
-    padding: 80px 40px;
-  }
-  .banner-text h1 {
-    font-size: 42px;
-    line-height: 56px;
-    padding-top: 100px;
-  }
-  .banner-text p {
-    padding-top: 40px;
-    font-size: 18px;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  .banner-btn {
-    justify-content: center;
-    margin-top: 30px;
-  }
-  .banner-count {
-    margin-top: 100px;
-    justify-content: center;
-    gap: 40px;
-  }
-}
-
-/* Mobile (≤991px) */
-@media (max-width: 991px) {
-  .hero {
-    min-height: 550px;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  .banner-text h1 {
-    font-size: 32px;
-    line-height: 44px;
-    padding-top: 60px;
-  }
-  .banner-text p {
-    font-size: 16px;
-    line-height: 24px;
-    padding-top: 20px;
-  }
-  .banner-btn {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: 25px;
-  }
-  .banner-btn .btn-shop,
-  .banner-btn .btn-find {
-    width: 100%;
-    max-width: 220px;
-    justify-content: center;
-  }
-  .banner-count {
-    margin-top: 60px;
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-/*  Tablet & up (≥768px) এ বাটন ও কাউন্ট পাশাপাশি */
-@media (min-width: 768px) and (max-width: 991px) {
-  .banner-btn {
-    flex-direction: row;
-    justify-content: center;
-    gap: 20px;
-  }
-  .banner-btn .btn-shop,
-  .banner-btn .btn-find {
-    width: auto;
-    max-width: none;
-  }
-
-  .banner-count {
-    flex-direction: row;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 60px;
-  }
-}
