@@ -1,8 +1,8 @@
-/* =================== EXTRA LARGE DEVICES (≥1400px) =================== */
+
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 100%;
-    padding: 0 300px; /* বড় ডিভাইসে fix 300px padding */
+    padding: 0 300px; 
   }
 }
 
@@ -104,6 +104,82 @@
   .trending-section .trending-btn {
     margin-top: 10px;
   }
+  /*-------------*/
+  .why-choose-card .how {
+    width: calc(50% - 20px) !important; /* দুইটি কার্ড পাশে পাশে */
+    max-width: calc(50% - 20px);
+    margin: 0 10px; /* কার্ডের মধ্যে ফাঁকা */
+  }
+
+  /*----------------------*/
+    .cta-banner{
+    margin: 0 50px;        
+    padding: 60px 30px;   
+    border-radius: 30px;
+  }
+  
+  .cta-text{
+    padding-top: 50px;    
+    text-align: center;
+  }
+  .cta-text h3{
+    font-size: 28px;      
+    line-height: 34px;
+  }
+  .cta-text p{
+    font-size: 18px;      
+    line-height: 24px;
+    padding-top: 16px;
+  }
+  .cta-btn{
+    flex-wrap: wrap;     
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .cta-btn .btn-browse,
+  .cta-btn .btn-explore{
+    width: auto;
+    min-width: 160px;   
+  }
+  /*------------------*/
+  .footer { padding: 70px 60px; }
+
+  /* টেক্সট কমানো */
+  .footer-SoundSellers { font-size: 28px; line-height: 30px; }
+  .footer p, .footer h6, .footer ul li a { font-size: 15px; line-height: 22px; }
+
+  /* কলাম এক লাইনে রাখার চেষ্টা */
+  .footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; }
+
+  /* ইনপুট + বাটন + টেক্সট এক লাইনে */
+  .footer form.vstack {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .footer form.vstack p {
+    margin: 0;
+    font-size: 14px;
+    color: #CCCCCC;
+    white-space: nowrap;
+  }
+  .footer-btn {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    flex: 1 1 auto;
+  }
+  .footer-btn input {
+    border-radius: 8px 0 0 8px;
+    flex: 1;
+  }
+  .footer-btn button {
+    border-radius: 0 8px 8px 0;
+    flex: 0 0 auto;
+  }
+
+  .footer-last { flex-direction: row; justify-content: space-between; align-items: center; gap: 20px; }
 }
 
 /* =================== TABLET DEVICES (768px – 991px) =================== */
@@ -171,6 +247,109 @@
     max-width: calc(50% - 20px);
     margin-bottom: 20px;
   }
+  /*----------------*/
+  .cta-banner{
+    margin: 0 50px; 
+    padding: 60px 0;
+  }
+  .cta-text h3{
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .cta-text p{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .cta-btn{
+    flex-wrap: wrap;
+  }
+  /*------------------*/
+  .footer {
+    padding: 50px 30px;
+  }
+
+  .footer .col-md-4:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .footer-SoundSellers {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .footer p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #CCCCCC;
+  }
+  .footer .d-flex.gap-3 a i {
+    font-size: 18px;
+  }
+
+  .footer .col-6 {
+    flex: 0 0 48%;
+    margin-bottom: 16px;
+  }
+  .footer h6 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .footer ul li a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #CCCCCC;
+    text-decoration: none;
+  }
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  .footer form.vstack {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .footer form.vstack p {
+    font-size: 14px;
+    color: #CCCCCC;
+    margin: 0;
+  }
+  .footer-btn {
+    display: flex;
+    gap: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .footer-btn input {
+    flex: 1;
+    border-radius: 8px 0 0 8px;
+    height: 42px;
+    padding: 8px 12px;
+    min-width: 0;
+  }
+  .footer-btn button {
+    border-radius: 0 8px 8px 0;
+    height: 42px;
+    padding: 8px 16px;
+    flex: 0 0 auto;
+  }
+  .footer-last {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .footer-last img {
+    max-width: 100px;
+  }
+  .footer-last div, .footer-last a {
+    font-size: 12px;
+    color: #CCCCCC;
+  }
 }
 
 /* =================== MOBILE DEVICES (≤767px) =================== */
@@ -194,39 +373,54 @@
     padding: 60px 15px 15px; 
     text-align: center;
   }
+
   .banner-text h1 {
-    font-size: 28px;
-    line-height: 36px;
-    padding-top: 40px;
+    font-size: 32px;
+    line-height: 40px;
+    padding-top: 0px;
   }
+
   .banner-text p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
-    padding-top: 10px;
+    max-width: 100%;
+    padding-top: 20px;
   }
+
   .banner-btn {
     flex-direction: column;
-    align-items: center;
     gap: 12px;
-    margin-top: 20px;
+    padding-top: 30px;
   }
+
   .banner-btn .btn-shop,
   .banner-btn .btn-find {
     width: 100%;
-    max-width: 200px;
-    justify-content: center;
-  }
-  .banner-count {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 40px;
-  }
-  .banner-count span {
-    font-size: 22px;
-  }
-  .banner-name {
     font-size: 16px;
+    padding: 12px 0;
   }
+
+  
+  .banner-count {
+    flex-direction: row; 
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 8px;
+  }
+
+  .banner-name {
+    font-size: 12px;
+  }
+
+  .banner-name span {
+    font-size: 16px; 
+  }
+
+  .banner-text h1 {
+      font-size: 32px;
+      line-height: 40px;
+   }
+  /*------------------*/
 
   .categories-card {
     display: flex;
@@ -241,6 +435,9 @@
     margin-bottom: 20px;
   }
   /*--------------------*/
+  .trending-section {
+    margin-top: 0px;
+}
   .trending-section .d-flex.align-items-center.justify-content-between.mb-3 {
     flex-direction: column;
     align-items: center;
@@ -270,9 +467,11 @@
 
   #productGrid .card {
     width: 100%;
-    max-width: 300px;
   }
   /*-------------------*/
+  .teachers {
+    margin-top: 0;
+}
    .trending-title h2 {
     font-size: 1.25rem; 
   }
@@ -297,14 +496,63 @@
     width: 100%; 
     max-width: 100%;
   }
+  .card{
+    width: 100%;
+  }
   /*-------------------*/
+  .choose{
+  margin-top: 20px;
+}
+.why-choose{
+  padding-top: 0px;
+}
   .why-choose-card .col-6 {
-    width: 100% !important; /* এক লাইন এক কার্ড */
+    width: 100% !important;
     max-width: 100%;
     flex: 0 0 100%;
   }
   .why-choose-card {
-    padding-top: 30px; /* ছোট ডিভাইসে একটু কম স্পেস */
-    gap: 20px; /* কার্ডের মধ্যে ফাঁকা */
+    padding-top: 30px; 
+    gap: 20px;
   }
+
+  /*--------------*/
+ 
+  .cta-banner{
+    margin: 0 10px; 
+    padding: 50px 0;
+    margin-top: 50px;
+  }
+  .cta-text{
+    padding-top: 0;
+  }
+  .cta-text h3{
+    font-size: 24px; 
+    line-height: 30px;
+  }
+
+  .cta-btn{
+    padding: 30px;
+  }
+      .cta-text p{
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0 49px;
+    }
+
+  /*-----------------------*/
+  .footer { padding: 50px 20px; }
+  .footer-SoundSellers { font-size: 24px; line-height: 28px; }
+  .footer p, .footer h6, .footer ul li a { font-size: 14px; line-height: 20px; }
+  .footer .row { flex-direction: column; gap: 25px; }
+  .footer-btn { flex-direction: column; gap: 8px; }
+  .footer-btn input { width: 100%; }
+  .footer-btn button { width: 100%; }
+  .footer-last { flex-direction: column; gap: 12px; align-items: center; text-align: center; }
+  .footer-last img { max-width: 120px; }
 }
+
+
+
+
+
