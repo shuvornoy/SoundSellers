@@ -106,9 +106,9 @@
   }
   /*-------------*/
   .why-choose-card .how {
-    width: calc(50% - 20px) !important; /* দুইটি কার্ড পাশে পাশে */
+    width: calc(50% - 20px) !important; 
     max-width: calc(50% - 20px);
-    margin: 0 10px; /* কার্ডের মধ্যে ফাঁকা */
+    margin: 0 10px; 
   }
 
   /*----------------------*/
@@ -145,14 +145,11 @@
   /*------------------*/
   .footer { padding: 70px 60px; }
 
-  /* টেক্সট কমানো */
   .footer-SoundSellers { font-size: 28px; line-height: 30px; }
   .footer p, .footer h6, .footer ul li a { font-size: 15px; line-height: 22px; }
 
-  /* কলাম এক লাইনে রাখার চেষ্টা */
   .footer .row { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; }
 
-  /* ইনপুট + বাটন + টেক্সট এক লাইনে */
   .footer form.vstack {
     display: flex;
     align-items: center;
@@ -459,7 +456,7 @@
     margin-top: 10px;
   }
 
-  /* Product Grid */
+
   #productGrid {
     justify-content: center;
     gap: 20px;

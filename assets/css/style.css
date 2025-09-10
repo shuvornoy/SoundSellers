@@ -199,18 +199,17 @@ font-family: Inter;
 font-size: 36px;
 font-style: normal;
 font-weight: 700;
-line-height: 44px; /* 122.222% */
+line-height: 44px; 
 letter-spacing: -0.72px;
 }
 .trending-title p{
   color: #4A5565;
   padding-top: 10px;
-/* Text lg/Regular */
 font-family: Inter;
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
-line-height: 28px; /* 155.556% */
+line-height: 28px; 
 }
 .trending-btn{
   display: flex;
@@ -266,7 +265,7 @@ font-family: Inter;
 font-size: 20px;
 font-style: normal;
 font-weight: 700;
-line-height: 28px; /* 140% */
+line-height: 28px; 
 }
 .bay-btn{
 display: flex;
@@ -414,7 +413,7 @@ font-family: Inter;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 150% */
+line-height: 24px; 
 }
 /*=================== How It Works =====================*/
 
@@ -494,7 +493,7 @@ z-index: 0.99999;
 
 
 /*=================== Footer =====================*/
-/* =================== FOOTER BASE =================== */
+
 .footer {
   margin-top: 100px;
   width: 100%;
