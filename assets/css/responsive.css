@@ -272,4 +272,39 @@
     width: 100%;
     max-width: 300px;
   }
+  /*-------------------*/
+   .trending-title h2 {
+    font-size: 1.25rem; 
+  }
+  .trending-title p {
+    font-size: 0.875rem;
+  }
+  .d-flex.align-items-center.justify-content-between.mb-3 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .btn.trending-btn {
+    align-self: flex-start;
+  }
+
+  .teachers-all-card {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .teachers-card {
+    width: 100%; 
+    max-width: 100%;
+  }
+  /*-------------------*/
+  .why-choose-card .col-6 {
+    width: 100% !important; /* এক লাইন এক কার্ড */
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .why-choose-card {
+    padding-top: 30px; /* ছোট ডিভাইসে একটু কম স্পেস */
+    gap: 20px; /* কার্ডের মধ্যে ফাঁকা */
+  }
 }

@@ -286,94 +286,85 @@ cursor: pointer;
 
 /*====================== Teachers ==============================*/
 
-.teachers-card{
-  display: flex;
-width: 312px;
-height: 488px;
-padding: 1px 1px 0 1px;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-border-radius: 14px;
-border: 1px solid #E5E7EB;
-background: #FFF;
-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+.teachers {
+  margin-top: 170px;
 }
-.teachers-card h5{
-  color: #101828;
 
-/* Text lg/Medium */
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 28px; /* 155.556% */
-}
-.teachers-all-card{
+.teachers-card {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 312px;
+  height: 488px;
+  border-radius: 14px;
+  border: 1px solid #E5E7EB;
+  background: #FFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+  padding: 1px;
+}
+
+.teachers-card h5 {
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 28px;
+  color: #101828;
+}
+
+.teachers-card-p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #8C8C8C;
+}
+
+.teachers-card-loca {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #6A7282;
+}
+
+.teachers-three-btn span {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 5px 10px;
+  border-radius: 14px;
+  border: 1px solid #E5E7EB;
+  background: #FFF;
+  margin-right: 5px;
+}
+
+.teachers-dolar {
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 28px;
+  color: #101828;
+}
+
+.teachers-dolar span {
+  font-size: 14px;
+  color: #6A7282;
+}
+
+.teachers-booknow {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #A67C52;
+}
+
+.teachers-all-card {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-}
-.teachers-card-p{
-  color: var(--Netural-netural-7, #8C8C8C);
-
-/* Text sm/Regular */
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 142.857% */
-}
-.teachers-card-loca li{
-  color: #6A7282;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 142.857% */
-}
-.teachers-three-btn span{
-color: #171717;
-text-align: center;
-font-family: Inter;
-font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: 16px; /* 133.333% */
-padding: 5px 10px;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-border-radius: 14px;
-border: 1px solid #E5E7EB;
-background: #FFF;
-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+  gap: 20px;
 }
 
-.teachers-dolar{
-  color: #101828;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-line-height: 28px; /* 140% */
-}
-.teachers-dolar span{
-  color: #6A7282;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 142.857% */
-}
-.teachers-booknow{
-  color: var(--Dark-Yellow-dark-yellow-6, #A67C52);
-
-/* Text lg/Regular */
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px; /* 155.556% */
-}
 
 /*=================== Why Choose =====================*/
 
