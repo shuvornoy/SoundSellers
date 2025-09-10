@@ -125,19 +125,24 @@ body {
 
 
 /*================= Category ======================*/
-.categories-section{
+.categories-section {
   padding-top: 120px;
 }
-.category{
-  width: 200px;
-  height: 202px;
+
+.category {
+  width: 100%; 
+  max-width: 220px; 
+  height: auto;
   padding: 25px;
+  margin: 0 auto;
 }
-.category a{
+
+.category a {
   text-decoration: none;
   color: #101828;
 }
-.category .Category-taitel{
+
+.category .Category-taitel {
   margin-top: 16px;
   color: #101828;
   text-align: center;
@@ -145,42 +150,39 @@ body {
   font-weight: 500;
   line-height: 30px;
 }
-.category p{
+
+.category p {
   color: #6A7282;
-text-align: center;
-/* Text md/Regular */
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
-.categories-heat h2{
+
+.categories-heat h2 {
   color: #101828;
-text-align: center;
-
-/* Display md/Bold */
-font-family: Inter;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: 44px; /* 122.222% */
-letter-spacing: -0.72px;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.72px;
 }
-.categories-heat p{
-color: #4A5565;
-text-align: center;
 
-/* Text lg/Regular */
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px; /* 155.556% */
+.categories-heat p {
+  color: #4A5565;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
 }
-.categories-card{
+
+.categories-card {
   margin-top: 60px;
 }
+
 
 /*================= Cards ======================*/
 .trending-section{
